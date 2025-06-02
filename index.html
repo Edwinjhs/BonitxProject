@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de 7 Días para Practicar Amor Propio | Hola Bonitx</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf2f8;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .heart-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Mejoras para responsividad en móviles */
+        @media (max-width: 640px) {
+            .mobile-menu {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background-color: white;
+                padding: 1rem;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                z-index: 50;
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+            .mobile-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            .mobile-menu li {
+                margin: 0.75rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm relative">
+        <div class="container mx-auto px-4 py-4 sm:py-6 flex flex-wrap justify-between items-center">
+            <div class="flex items-center">
+                <svg class="w-7 h-7 sm:w-8 sm:h-8 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                </svg>
+                <h1 class="text-lg sm:text-xl font-bold text-gray-800">Hola Bonitx</h1>
+            </div>
+            
+            <!-- Hamburger menu for mobile -->
+            <button id="mobile-menu-button" class="sm:hidden flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden sm:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#beneficios" class="text-gray-600 hover:text-pink-500 transition">Beneficios</a></li>
+                    <li><a href="#planes" class="text-gray-600 hover:text-pink-500 transition">Planes</a></li>
+                    <li><a href="#testimonios" class="text-gray-600 hover:text-pink-500 transition">Testimonios</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="mobile-menu hidden sm:hidden">
+                <ul class="flex flex-col items-center w-full">
+                    <li><a href="#beneficios" class="text-gray-600 hover:text-pink-500 transition w-full text-center py-2">Beneficios</a></li>
+                    <li><a href="#planes" class="text-gray-600 hover:text-pink-500 transition w-full text-center py-2">Planes</a></li>
+                    <li><a href="#testimonios" class="text-gray-600 hover:text-pink-500 transition w-full text-center py-2">Testimonios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-10 sm:py-16 md:py-24 px-4">
+        <div class="container mx-auto max-w-6xl flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    Plan de <span class="gradient-text">7 Días</span> para Practicar Amor Propio
+                </h1>
+                <p class="text-base sm:text-lg text-gray-600 mb-8">
+                    Transforma tu relación contigo mismo en solo una semana con nuestro workbook práctico y efectivo. Diseñado para guiarte paso a paso en un viaje de autodescubrimiento y aceptación.
+                </p>
+                <a href="#planes" class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium py-3 px-6 sm:px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    Comenzar mi viaje
+                </a>
+            </div>
+            <div class="md:w-1/2 md:pl-10 w-full max-w-md mx-auto md:max-w-none">
+                <div class="relative">
+                    <div class="absolute -top-6 -left-6 w-48 h-48 sm:w-64 sm:h-64 bg-purple-100 rounded-full opacity-70"></div>
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 sm:w-64 sm:h-64 bg-pink-100 rounded-full opacity-70"></div>
+                    <div class="relative bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
+                        <svg class="w-12 h-12 sm:w-16 sm:h-16 text-pink-500 mx-auto heart-animation" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                        </svg>
+                        <div class="mt-6 bg-pink-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-gray-800 mb-2">¿Qué incluye el workbook?</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-pink-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>7 ejercicios diarios prácticos</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-pink-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Reflexiones guiadas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-pink-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Afirmaciones positivas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-pink-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Espacio para journaling</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-12 sm:py-16 bg-white">
+        <div class="container mx-auto max-w-6xl px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">¿Por qué practicar el <span class="gradient-text">amor propio</span>?</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-pink-50 rounded-xl p-5 sm:p-6 shadow-sm">
+                    <div class="bg-pink-100 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 sm:w-8 sm:h-8 text-pink-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Mejores relaciones</h3>
+                    <p class="text-gray-600">Cuando te amas a ti mismo, estableces límites saludables y atraes relaciones más positivas y equilibradas.</p>
+                </div>
+                
+                <div class="bg-purple-50 rounded-xl p-5 sm:p-6 shadow-sm">
+                    <div class="bg-purple-100 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 sm:w-8 sm:h-8 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Mayor bienestar</h3>
+                    <p class="text-gray-600">El amor propio reduce el estrés, mejora tu autoestima y contribuye a una mejor salud mental y física.</p>
+                </div>
+                
+                <div class="bg-pink-50 rounded-xl p-5 sm:p-6 shadow-sm sm:col-span-2 md:col-span-1 mx-auto sm:mx-0 max-w-md sm:max-w-none">
+                    <div class="bg-pink-100 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 sm:w-8 sm:h-8 text-pink-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Más energía</h3>
+                    <p class="text-gray-600">Al priorizar tu bienestar, aumentas tus niveles de energía y motivación para perseguir tus metas y sueños.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden relative">
+ 
+
+
+    <!-- Pricing Section -->
+    <section id="planes" class="py-12 sm:py-16 bg-gradient-to-b from-white to-pink-50">
+        <div class="container mx-auto max-w-6xl px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3 sm:mb-4">Elige tu plan</h2>
+            <p class="text-center text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto px-2">Invierte en ti mismo con nuestros planes diseñados para acompañarte en tu viaje de amor propio.</p>
+            
+            <div class="flex flex-col md:flex-row gap-8 justify-center">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-sm mx-auto md:mx-0 md:w-96 transition-all duration-300 card-hover">
+                    <div class="p-6 sm:p-8">
+                        <h3 class="text-xl sm:text-2xl font-bold mb-2">Plan Básico</h3>
+                        <div class="flex items-end mb-6">
+                            <span class="text-3xl sm:text-4xl font-bold">$4,99*</span>
+                            <span class="text-gray-500 ml-1">USD</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Perfecto para comenzar tu viaje de amor propio con lo esencial.</p>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Workbook de 7 días completo</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Ejercicios diarios</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Afirmaciones positivas</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <svg class="w-5 h-5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Diario de gratitud</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <svg class="w-5 h-5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Checklist de autocuidado</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+                        <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+      <a 
+        href="https://pay.hotmart.com/N99923271C?off=y3ezsvkt" 
+        target="_blank"
+        class="w-full bg-pink-500 text-white font-medium py-3 px-4 rounded-lg hover:bg-pink-600 transition block text-center"
+      >
+        Comprar ahora
+      </a>
+    </div>
+
+                            <p class="text-xs text-gray-500 mt-2 text-center">
+              * Precio de lanzamiento (valor real: $9,99 USD). ¡Esta oferta termina pronto!.
+            </p>
+                    </div>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-sm mx-auto md:mx-0 md:w-96 border-2 border-pink-500 transition-all duration-300 card-hover relative">
+                    <div class="absolute top-0 right-0">
+                        <div class="bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            RECOMENDADO
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-8">
+                        <h3 class="text-xl sm:text-2xl font-bold mb-2">Plan Premium</h3>
+                        <div class="flex items-end mb-6">
+                            <span class="text-3xl sm:text-4xl font-bold">$9,99*</span>
+                            <span class="text-gray-500 ml-1">USD</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">La experiencia completa para transformar tu relación contigo mismo.</p>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Workbook de 7 días completo</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Ejercicios diarios</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Afirmaciones positivas</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Diario de gratitud</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Checklist de autocuidado</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Planner diario</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Meditación guiada (4 min)</span>
+                            </li>
+                        </ul>
+                    </div>
+                        <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+      <a 
+        href="https://pay.hotmart.com/E99937287N?off=k0idmnd5" 
+        target="_blank"
+        class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium py-3 px-4 rounded-lg hover:opacity-90 transition block text-center"
+      >
+        Comprar ahora
+      </a>
+    </div>
+                    <!-- <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+                        <button class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium py-3 px-4 rounded-lg hover:opacity-90 transition">
+                            Comprar ahora
+                        </button>
+                    </div> -->
+                        <p class="text-xs text-gray-500 mt-2 text-center">
+              * Precio de lanzamiento (valor real: $14,99 USD). ¡Esta oferta termina pronto!.
+            </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="py-12 sm:py-16 bg-white">
+        <div class="container mx-auto max-w-6xl px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Lo que dicen nuestros clientes</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-pink-50 p-5 sm:p-6 rounded-xl">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Este workbook cambió mi vida. Los ejercicios son simples pero profundos, y en solo una semana noté un cambio en cómo me hablo a mí misma."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-pink-200 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="font-semibold text-pink-600">ML</span>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-semibold">María López</h4>
+                            <p class="text-sm text-gray-500">Plan Premium</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-50 p-5 sm:p-6 rounded-xl">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-4">"La meditación guiada del plan premium es increíble. Ahora la hago cada mañana y me siento mucho más centrado y en paz durante todo el día."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="font-semibold text-purple-600">CR</span>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Carlos Rodríguez</h4>
+                            <p class="text-sm text-gray-500">Plan Premium</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-pink-50 p-5 sm:p-6 rounded-xl sm:col-span-2 md:col-span-1">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-4">"El checklist de autocuidado es mi parte favorita. Me ayuda a priorizar mi bienestar incluso en los días más ocupados. ¡Vale cada centavo!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-pink-200 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="font-semibold text-pink-600">AG</span>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Ana García</h4>
+                            <p class="text-sm text-gray-500">Plan Premium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-12 sm:py-16 bg-pink-50">
+        <div class="container mx-auto max-w-4xl px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Preguntas frecuentes</h2>
+            
+            <div class="space-y-4 sm:space-y-6">
+                <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
+                    <h3 class="font-semibold text-base sm:text-lg mb-2">¿Cómo recibo mi workbook después de la compra?</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Inmediatamente después de la compra, recibirás un correo electrónico con un enlace para descargar todos los materiales en formato PDF de alta calidad.</p>
+                </div>
+                
+                <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
+                    <h3 class="font-semibold text-base sm:text-lg mb-2">¿Puedo imprimir el workbook?</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">¡Absolutamente! Todos nuestros materiales están diseñados para ser impresos o utilizados digitalmente, según tu preferencia.</p>
+                </div>
+                
+                <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
+                    <h3 class="font-semibold text-base sm:text-lg mb-2">¿Cuánto tiempo debo dedicar cada día?</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Los ejercicios están diseñados para tomar entre 10-15 minutos diarios, pero puedes dedicar más tiempo si lo deseas para una experiencia más profunda.</p>
+                </div>
+                
+                <div class="bg-white p-5 sm:p-6 rounded-xl shadow-sm">
+                    <h3 class="font-semibold text-base sm:text-lg mb-2">¿Hay garantía de devolución?</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Sí, ofrecemos una garantía de satisfacción de 7 días. Si no estás completamente satisfecho, te devolveremos tu dinero sin hacer preguntas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 sm:py-16 bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+        <div class="container mx-auto max-w-4xl px-4 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Comienza tu viaje de amor propio hoy</h2>
+            <p class="text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto">Invierte en ti mismo y descubre el poder transformador del amor propio con nuestro workbook de 7 días.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#planes" class="bg-white text-pink-600 font-medium py-3 px-6 sm:px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    Ver planes
+                </a>
+                <button class="bg-transparent border-2 border-white text-white font-medium py-3 px-6 sm:px-8 rounded-full hover:bg-white hover:text-pink-600 transition duration-300">
+                    Saber más
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 sm:py-12">
+        <div class="container mx-auto max-w-6xl px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-7 h-7 sm:w-8 sm:h-8 text-pink-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                        </svg>
+                        <h3 class="text-lg sm:text-xl font-bold">Hola Bonitx</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4 text-sm sm:text-base">Transformando vidas a través del poder del amor propio y el autocuidado.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/holabonitx/" class="text-gray-400 hover:text-pink-400 transition">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/holabonitx/" class="text-gray-400 hover:text-pink-400 transition">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-6 sm:mt-0">
+                    <h3 class="text-base sm:text-lg font-semibold mb-4">Enlaces rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-pink-400 transition text-sm sm:text-base">Inicio</a></li>
+                        <li><a href="#beneficios" class="text-gray-400 hover:text-pink-400 transition text-sm sm:text-base">Beneficios</a></li>
+                        <li><a href="#planes" class="text-gray-400 hover:text-pink-400 transition text-sm sm:text-base">Planes</a></li>
+                        <li><a href="#testimonios" class="text-gray-400 hover:text-pink-400 transition text-sm sm:text-base">Testimonios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mt-6 md:mt-0">
+                    <h3 class="text-base sm:text-lg font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-pink-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            <a href="mailto:landyebooks@gmail.com" class="text-gray-400 hover:text-pink-400 transition text-sm sm:text-base">landyebooks@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-pink-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-400 text-sm sm:text-base">Bogota, Colombia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 sm:mt-10 pt-6 text-center text-gray-400 text-xs sm:text-sm">
+                <p>&copy; 2025 Hola Bonitx. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.style.transform = 'translateY(0)';
+                mobileMenu.style.opacity = '1';
+            } else {
+                mobileMenu.style.transform = 'translateY(-100%)';
+                mobileMenu.style.opacity = '0';
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add functionality to buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.textContent.trim() === 'Comprar ahora') {
+                    alert('https://pay.hotmart.com/N99923271C?off=y3ezsvkt');
+                } else if (this.textContent.trim() === 'Saber más') {
+                    document.querySelector('#beneficios').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
